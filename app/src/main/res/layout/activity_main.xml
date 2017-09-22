@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autodetectimage.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="camera"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+        <Button
+            android:id="@+id/manualcrop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Manual Crop"
+            android:visibility="visible"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/crop"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Crop"
+            android:layout_weight="0.5"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonlayout"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:layout_above="@+id/crop_button_bar"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_margin="10dp"
+        tools:context="com.autodetectimage.MainActivity"
+        tools:ignore="MergeRootFrame" >
+
+        <com.autodetectimage.CropImageView
+            android:contentDescription="hello world"
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#ff000000"
+            android:scaleType="fitCenter"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        style="?attr/buttonBarStyle"
+        android:id="@+id/crop_button_bar"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+        <ImageButton
+            style="?attr/buttonBarButtonStyle"
+            android:id="@+id/btn_rotate_left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_action_rotate_left"/>
+        <ImageButton
+            style="?attr/buttonBarButtonStyle"
+            android:id="@+id/btn_rotate_right"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_action_rotate_right"/>
+        <ImageButton
+            style="?attr/buttonBarButtonStyle"
+            android:id="@+id/btn_revert_selection"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_action_view_as_grid"/>
+        <ImageButton
+            style="?attr/buttonBarButtonStyle"
+            android:id="@+id/btn_expand_selection"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_action_select_all"/>
+    </LinearLayout>
+
+</RelativeLayout>

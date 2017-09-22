@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AutoDetectImage</string>
+
+
+    <string name="camera_uncertain_detection">"Uncertain detection"</string>
+    <string name="camera_small_area">"Move Camera closer to document"</string>
+    <string name="camera_distorted">"Hold camera parallel to document"</string>
+
+    <string name="permission_query_read_storage">Allow CropDemo to access photos and files on your device?</string>
+    <string name="permission_query_write_storage">Allow CropDemo to write files to your device?</string>
+    <string name="permission_query_camera">Allow CropDemo to take pictures and record video?</string>\
+
+    <string name="share_output_title">Share DI SDK output</string>
+    <string name="msg_cannot_save_file">Cannot save processed image</string>
+    <string name="msg_bad_external_storage">No available storage found.</string>
+    <string name="msg_image_file_info">Open image file %1$4dx%2$4d\n%3$s</string>
+    <string name="processed_images_file">cropdemo%1$016x.%2$s</string>
+    <string name="msg_write_image_file">Image saved as\n%1$s</string>
+    <string name="msg_cannot_open_file">Cannot open image file\n%1$s</string>
+    <string name="camera_shot_busy">Camera busy</string>
+    <string name="camera_shot_not_stable">Camera is shaking</string>
+    <string name="camera_shot_focus_timeout">Shot failed</string>
+    <string name="camera_shot_focus_failed">Cannot focus camera. Try one more time.</string>
+    <string name="camera_looking_for_document">Looking for the document</string>
+    <string name="title_activity_camera">CropDemo Camera</string>
+
+    <string name="msg_processing_complete">Processing complete</string>
+    <string name="msg_processing_error">Processing error</string>
+    <string name="msg_no_doc_corners">No document corners found</string>
+    <string name="msg_invalid_corners">Document corners are invalid</string>
+    <string name="msg_out_of_memory">Out of memory!</string>
+</resources>

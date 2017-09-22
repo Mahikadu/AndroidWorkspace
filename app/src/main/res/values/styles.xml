@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CameraShotCounter" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/camera_shooter_text_color</item>
+        <item name="android:background">@drawable/shot_counter_background</item>
+    </style>
+
+    <style name="CameraConsole" parent="CameraShotCounter">
+        <item name="android:textColor">@color/camera_message_text_color</item>
+        <item name="android:background">@drawable/camera_console_item_background</item>
+    </style>
+
+    <style name="CameraTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Full screen Camera -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="camera_flash_off">@drawable/ic_action_flash_off_dark</item>
+        <item name="camera_flash_on">@drawable/ic_action_flash_on_dark</item>
+        <item name="camera_corners_off">@drawable/ic_camera_detector_off</item>
+        <item name="camera_corners_on">@drawable/ic_camera_detector_on</item>
+        <item name="camera_mode_single">@drawable/ic_camera_singlemode</item>
+        <item name="camera_mode_batch">@drawable/ic_camera_batchmode</item>
+        <item name="camera_shake_overlay">@drawable/ic_camera_shake_on_wave</item>
+    </style>
+
+</resources>

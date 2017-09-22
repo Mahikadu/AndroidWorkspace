@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="camera_toolbar_background">#7FFFFFFF</color>
+
+    <color name="primary_grey_300">#E0E0E0</color>
+    <color name="primary_grey_400">#BDBDBD</color>
+    <color name="primary_grey_700">#616161</color>
+    <color name="accent_indigo_500">#3F51B5</color>
+
+    <color name="camera_shooter_text_color">#FFFFFF</color>
+    <color name="camera_message_text_color">#FFFF00</color>
+    <color name="camera_message_text_background">#7F000000</color>
+    <color name="camera_overlay_frame_color">#C000FF00</color>
+    <color name="camera_overlay_alert_color">#C0FF0000</color>
+
+</resources>
